@@ -9,7 +9,7 @@ const fetchPokemon = () => {
     Promise.all(promises).then((results) => {
         const pokemon = results.map((result) => ({
             name: result.name[0].toUpperCase() + result.name.substring(1),
-            image: result.sprites['front_default'],
+            image: result['sprites']['other']['official-artwork']['front_default'],
             type: result.types.map((type) => type.type.name).join(', '),
             id: result.id
         }));
