@@ -11,3 +11,95 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background-color: orangered;
+  color: white;
+  margin: 0;
+  font-family: rubik;
+  padding: 0;
+  width: 100vw;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+  padding-right: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+#pokedex {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+  height: 220px;
+  width: 200px;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+.card-subtitle {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
+
+@keyframes bounce {
+  20% {
+      transform: translateY(-6px);
+  }
+  40% {
+      transform: translateY(0px);
+  }
+
+  80% {
+      transform: translateY(-2px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
