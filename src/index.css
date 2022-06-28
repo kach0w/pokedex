@@ -12,12 +12,14 @@ code {
     monospace;
 }
 body {
-  background-color: orangered;
+  background-color: #f86449;
   color: white;
   margin: 0;
   font-family: rubik;
   padding: 0;
   width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,7 +33,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 54px;
-  padding-right: 60px;
+  padding-right: 44px;
 }
 
 a {
@@ -55,6 +57,7 @@ a {
   text-align: center;
   height: 220px;
   width: 200px;
+  border-radius: 8px;
 }
 
 .card:hover {
@@ -94,6 +97,7 @@ a {
 }
 
 #myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
@@ -101,5 +105,8 @@ a {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  color: black;
+  display: inline-block;
 }
+
 

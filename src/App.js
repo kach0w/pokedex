@@ -6,6 +6,7 @@ const fetchPokemon = () => {
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         promises.push(fetch(url).then((res) => res.json()));
     }
+    console.log(promises);
     Promise.all(promises).then((results) => {
         const pokemon = results.map((result) => ({
             name: result.name[0].toUpperCase() + result.name.substring(1),
@@ -18,7 +19,6 @@ const fetchPokemon = () => {
 };
 
 const displayPokemon = (pokemon) => {
-    console.log(pokemon);
     const pokemonHTMLString = pokemon
         .map(
             (pokemon) => `
