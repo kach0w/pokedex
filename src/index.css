@@ -119,8 +119,8 @@ a {
 	height:100%;
 	display:table;
 	background-color: #f86449;
-	-webkit-animation: splash 10s forwards; 
-  animation: splash 10s forwards;
+	-webkit-animation: splash 14s forwards; 
+  animation: splash 14s forwards;
   z-index: 3;
 }
 .overlay-inner {
